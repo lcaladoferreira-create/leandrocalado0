@@ -1,14 +1,54 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme') || 'dark';
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+        else document.documentElement.classList.remove('dark');
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Leandro Calado | The Definitive Technical Library</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2309090b'/%3E%3Cpath d='M30 30 L50 50 L30 70 M55 70 L75 70' stroke='%23f4f4f5' stroke-width='8' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+    
+    <!-- Primary Meta Tags -->
+    <title>Leandro Calado | The Definitive Library for AI Engineers</title>
+    <meta name="title" content="Leandro Calado | The Definitive Library for AI Engineers" />
+    <meta name="description" content="The weapons room for technical architects. Implementation-grade books on Agentic AI, MCP, n8n, Python, and Data Engineering. Stop reading scattered docs. Start building systems." />
+    <meta name="keywords" content="Leandro Calado, AI Engineer, Data Engineering, AI Agents, n8n, MCP, Model Context Protocol, Python, LLM, RAG, AWS, Databricks, automation" />
+    <meta name="author" content="Leandro Calado" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- AI Bot / Crawler Directives -->
+    <meta name="googlebot" content="index, follow" />
+    <meta name="GPTBot" content="index, follow" />
+    <meta name="Google-Extended" content="index, follow" />
+    <meta name="PerplexityBot" content="index, follow" />
+    <meta name="anthropic-ai" content="index, follow" />
+    <meta name="ClaudeBot" content="index, follow" />
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lcfconsulting.com.br/" />
+    <meta property="og:title" content="Leandro Calado | The Definitive Library for AI Engineers" />
+    <meta property="og:description" content="The weapons room for technical architects. Implementation-grade books on Agentic AI, MCP, n8n, Python, and Data Engineering. Stop reading scattered docs. Start building systems." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lcfconsulting.com.br/" />
+    <meta property="twitter:title" content="Leandro Calado | The Definitive Library for AI Engineers" />
+    <meta property="twitter:description" content="The weapons room for technical architects. Implementation-grade books on Agentic AI, MCP, n8n, Python, and Data Engineering. Stop reading scattered docs. Start building systems." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop" />
+
+    <link rel="canonical" href="https://lcfconsulting.com.br/" />
   </head>
-  <body class="bg-zinc-950 text-zinc-50 font-sans antialiased selection:bg-zinc-800 selection:text-white">
+  <body class="bg-zinc-50 text-zinc-950 dark:bg-zinc-950 dark:text-zinc-50 font-sans antialiased selection:bg-zinc-200 dark:selection:bg-zinc-800 selection:text-black dark:selection:text-white transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
