@@ -1,0 +1,6 @@
+{
+  "name": "Leandro Calado Library",
+  "description": "The Technical Library of Leandro Calado - AI Engineer & Systems Architect",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
